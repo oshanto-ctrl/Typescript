@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TS Show/Hide Password</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!--
+        - Enter a password in an input field.
+        - Toggle between showing and hiding the password.
+        - Use a button switch visibility.
+        - Ensure the the password remains secure while hidden.
+    -->
+
+    <div class="container">
+        <h1>Enter Password</h1>
+        <!-- Password Form -->
+        <form id="passwordForm">
+            <!-- Input Group for Input Container -->
+            <div class="input-group">
+                <div class="input-container">
+                    <!-- Input of Password Text -->
+                    <input type="password" id="password" placeholder="Enter Your Password" />
+                    <!-- Toogle Password Visibilty Button -->
+                    <button type="button" id="togglePasswordVisibility" aria-label="Show">👀</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    
+    <!-- Scripts -->
+    <script type="module" src="./dist/scritps.js"></script>
+</body>
+</html>
