@@ -148,3 +148,13 @@ const user = {
 console.log(userDetails(id, user));
 console.log(sayHello(user));
 
+
+/* Function Signatures */
+let memeFunc: (memeCount: number, sender: string) => string;
+
+memeFunc = (memes: number, sentBy: string) => {
+    // return `${sentBy} Sent ${memes}+ Memes Video. Check them out!`;
+   return memes > 1 ? `${sentBy} Sent ${memes}+ memes. Check them Out` : `${sentBy} Sent a Meme Video.`;
+}
+
+console.log(memeFunc(1, "Arafat"));
