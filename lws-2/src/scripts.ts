@@ -156,5 +156,19 @@ memeFunc = (memes: number, sentBy: string) => {
     // return `${sentBy} Sent ${memes}+ Memes Video. Check them out!`;
    return memes > 1 ? `${sentBy} Sent ${memes}+ memes. Check them Out` : `${sentBy} Sent a Meme Video.`;
 }
-
+// Invoking functions with signature
 console.log(memeFunc(1, "Arafat"));
+
+console.log();
+
+let bitBucket: (bits: number, sender: string) => string;
+
+bitBucket = (bitAmount: number, bitSender: string) => {
+    const isMultiple = bitAmount > 1;
+      return `${bitSender} Sent ${isMultiple ? `${bitAmount}+ Bits` : 'a Bit'}${isMultiple ? '. Check them out!' : ''}`;
+
+}
+
+console.log(bitBucket(0, "S-Rox")); // Still counts as a bit! 
+console.log(bitBucket(1, "Z00MB-Eat"));
+console.log(bitBucket(9, "SOUL-SOUP"));
